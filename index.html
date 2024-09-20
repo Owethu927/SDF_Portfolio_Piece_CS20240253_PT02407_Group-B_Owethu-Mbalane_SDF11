@@ -43,7 +43,7 @@
                     <button class="text-sm font-normal text-dark-grey-800 hover:text-dark-grey-900">Log In</button>
                     <button class=" px-4 py-2 text-sm font-bold text-blue bg-green-500 rounded-xl hover:bg-pink-500">Sign Up</button>
                 </div>
-                <button class="p-4 md:hidden" id="mobile-menu-toogle">
+                <button class="p-4 md:hidden" id="mobile-menu-toogle" onclick="myFunction()">
                     <svg
                     fill="none"
                     viewBox="0 0 24 24"
@@ -107,7 +107,7 @@
                 </div>
               </div>
 
-              <div class="items-center justify-end hidden col-span-1 md:flex ">
+              <div class="items-center justify-end  col-span-1 md:flex ">
                 <img class="w-4/5 rounded-md" src="./assets/component-2/hero-image.png" alt="header image">
 
               </div>
@@ -313,8 +313,8 @@
         <div class="w-full">
           <div class="container flex flex-col items-center gap-16 mx-auto my-32">
             <div class="grid w-full grid-cols-1 gap-32 lg:grid-cols-2">
-              <div class="bg-cover bg-center hidden lg:block rounded-3xl" style="background-image: url(as;sets/component-4/getting-started.png)">
-                <img src="./assets/component-4/getting-started.png">
+              <div class="bg-cover bg-center lg:block md:flex  rounded-3xl">
+                <img class="" src="./assets/component-4/getting-started.png">
               </div>
               <div class="flex flex-col gap-16">
                 <div class="flex flex-col gap-2 text-center md:text-start">
@@ -409,6 +409,7 @@
     <div class="w-full bg-green-500">
         <!-- Full-width footer container with green background -->
          <div class="container flex flex-col mx-auto">
+          <div class="flex flex-col items-center w-full my-20">
           <div class="flex flex-col items-center gap-6 mb-8">
             <!--socials-->
             <div class="flex items-center gap-8">
@@ -457,13 +458,17 @@
               </a>
             </div>
             <!--copyright-->
-            <div></div>
+            <div class="flex items-center">
+              <p class="text-base font-normal leading-7 text-center">2024 Cache Bank. All right reserved.</p>
+            </div>
           </div>
+         </div>
          </div>
     </div>
     <script>
         document.getElementById("mobile-menu-toggle").addEventListener("click", function() {document.getElementById("mobile-menu").classList.toggle("hidden")});
     </script>
+  </script>
     <script src="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/motion-tailwind/scripts/plugins/countup.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/motion-tailwind/scripts/countto.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/motion-tailwind/scripts/plugins/leaflet.js"></script>
